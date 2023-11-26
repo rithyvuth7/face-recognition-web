@@ -1,4 +1,3 @@
-import cv2
 import streamlit as st
 from joblib import load
 import numpy as np
@@ -6,6 +5,7 @@ import pandas as pd
 from PIL import Image
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
+import cv2
 
 model = load('data/model.pkl')
 people_names = np.genfromtxt('data/people_names.csv', delimiter=',', dtype=str)
