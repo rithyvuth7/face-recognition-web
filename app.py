@@ -8,8 +8,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
 model = load('data/model.pkl')
-# people_names = pd.read_csv('data/people_names.csv')
-# people_names = people_names.values
 people_names = np.genfromtxt('data/people_names.csv', delimiter=',', dtype=str)
 #print(people_names)
 scaler = load('data/scaler.pkl')
